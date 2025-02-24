@@ -1,0 +1,27 @@
+.day{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.404); 
+    backdrop-filter: blur(3px);
+    margin: 10px -10px;
+    width: 20%;
+}
+
+.day-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.day-info{
+    display: flex;
+    flex-direction: row;
+}
+
+.day-info> *{
+    margin: 0px 10px;
+}

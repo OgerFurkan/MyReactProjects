@@ -1,0 +1,106 @@
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.404); 
+    backdrop-filter: blur(3px);
+    padding: 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+}
+
+.info> * {
+   margin: 0px 10px;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar>input {
+    padding: 15px;  
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.534);
+    color: white;
+    font-size: 1rem;
+}
+.search-bar>input::placeholder{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.search-bar>input:focus {
+    outline: none;
+}
+
+.degree {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex: 0.5;
+    padding-left: 10%;
+}
+
+.degree>div {
+   font-size: 4rem;
+   display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.city{
+    flex: 2;
+}
+
+.city>* {
+    margin: 5px 0px;
+}
+
+.city-name {
+    font-size: 2.5rem;
+}
+
+.city-country {
+    font-size: 2rem;
+}
+.date {
+    font-size: 1.5rem;
+}
+
+.weather-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;;
+    align-items: center;
+    flex: 0.5;
+    font-size: 5rem;
+    padding-right: 10%;
+}
+
+
+
+
+
+
