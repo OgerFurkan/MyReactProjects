@@ -1,25 +1,56 @@
 import React from 'react'
 import "../css/mainWeather.css"
+import { FaSearch } from "react-icons/fa";
+import { TbTemperatureCelsius } from "react-icons/tb";
+import { getDayOfWeek } from "./Weather"
+import SearchBar from "./searchBar"
 
-function MainWeather() {
+function MainWeather( {location, setLocation, weather, getDayOfWeek}) {
   return (
-
     <>
         <div className="main">
-            <div className="search-bar">
-            <input type="text" placeholder="Şehir İsmi Giriniz..."/>
-             </div>
+            <SearchBar location={location} setLocation={setLocation}>
+                <FaSearch/>
+            </SearchBar>
             <div className="info">
                 <div className="degree">
-                    <div>25°C</div>
+                    <div>
+                        {
+                            weather ? (weather.list[0].main.temp).toFixed(1) : ""
+                        }
+                        <div><TbTemperatureCelsius /></div>
+                    </div>
                 </div>
                 <div className="city">
-                    <p className="city-name">Istanbul</p>
-                    <p className="city-country">Türkiye</p>
-                    <p className="date">24.02.2025</p>
+
+                    <p className="city-name">
+                        {weather ? weather.city.name.split(" ")[0] : "Şehir" }
+                    </p>
+
+                    <p className="city-day">
+                    {   
+                            weather ? getDayOfWeek(weather.list[0].dt_txt) : "Gün"  
+                    }
+                     </p>
+
+                    <p className="date">
+                        {
+                           weather ?  weather.list[0].dt_txt.split(" ")[0] : "Tarih"
+                        }
+                    </p>
+
                 </div> 
                 <div className="weather-icon">
-                icon
+                    <div>
+                        {
+                            weather ? <img src={`http://openweathermap.org/img/wn/${weather.list[0].weather[0].icon}@2x.png`}/> : ""
+                        }
+                        <p className="weather-description">
+                            {
+                                weather ? weather.list[0].weather[0].description.toUpperCase() : "-"
+                            }
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

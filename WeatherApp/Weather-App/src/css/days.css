@@ -10,18 +10,56 @@
     backdrop-filter: blur(3px);
     margin: 10px -10px;
     width: 20%;
+    height: 180px;
+    flex: 1 1 1 1 20%;
 }
 
 .day-name{
-    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
     font-weight: bold;
 }
 
 .day-info{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .day-info> *{
     margin: 0px 10px;
+}
+
+.day-degree{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.day-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.day-icon>i>img{
+    width: 75px;
+    height: 75px;
+}
+.day-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
 }
