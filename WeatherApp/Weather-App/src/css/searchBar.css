@@ -36,3 +36,27 @@
     align-items: center;
     margin: 0px 10px;
 }
+
+@media(max-width: 1430px) {
+    .search-bar {
+        width: 50%;
+    }
+    #search-input {
+        font-size: 1.2rem;
+    }
+    .search-icon {
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 490px) {
+    .search-bar {
+        width: 50%;
+    }
+    #search-input {
+        font-size: 0.5rem;
+    }
+    .search-icon {
+        font-size: 1rem;
+    }
+}

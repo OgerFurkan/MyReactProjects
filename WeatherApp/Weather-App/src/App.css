@@ -17,8 +17,7 @@ body{
   align-items: center;
   justify-content: center;
   width: 50%;
-  height: 100vh;
-  margin-top: 10%;
+  margin-top: -10%;
 }
 
 

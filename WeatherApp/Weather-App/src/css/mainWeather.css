@@ -91,6 +91,56 @@
     font-weight: bold;
 }
 
+@media(max-width: 1430px) {
+    .main {
+        width: 150%;
+    }
+    .degree>div {
+        font-size: 2rem;
+    }
+    .city-name {
+        font-size: 2rem;
+    }
+    .city-day {
+        font-size: 1.5rem;
+    }
+    .date {
+        font-size: 1rem;
+    }
+    .weather-description {
+        font-size: 1rem;
+    }
+    .weather-icon>div>img {
+        width: 100px;
+        height: 100px;
+    }
+}
+@media(max-width: 450px) {
+    .main {
+        width: 150%;
+    }
+    .degree>div {
+        font-size: 1rem;
+    }
+    .city-name {
+        font-size: 1rem;
+    }
+    .city-day {
+        font-size: 1rem;
+    }
+    .date {
+        font-size: 1rem;
+    }
+    .weather-description {
+        font-size: 0.75rem;
+    }
+    .weather-icon>div>img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
 
 
 
