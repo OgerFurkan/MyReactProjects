@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import MainWeather from "./MainWeather" 
-import "../css/Weather.css"
+import "../css/weather.css"
 import Days from "./Days"
 
 export const getDayOfWeek=(dateString)=> {  

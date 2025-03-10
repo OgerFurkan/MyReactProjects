@@ -9,7 +9,7 @@ function searchBar({location, setLocation, children}) {
         {children}
       </i>
       </label>
-    <input type="text" id='search-input' value={location} onChange={(e) => setLocation(e.target.value)} placeholder="Lütfen Bir Şehir İsmi Giriniz"/>
+    <input type="text" id='search-input' value={location} onChange={(e) => setLocation(e.target.value)} placeholder="Lütfen Bir Şehir İsmi Giriniz" autoComplete='off'/>
   </div>
   )
 }
