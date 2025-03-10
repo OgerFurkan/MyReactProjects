@@ -2,8 +2,8 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import MainWeather from "./MainWeather" 
-import "../css/weather.css"
 import Days from "./Days"
+import "../css/Weather.css"
 
 export const getDayOfWeek=(dateString)=> {  
     const date = new Date(dateString); 
