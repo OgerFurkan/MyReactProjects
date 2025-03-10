@@ -2,7 +2,7 @@ import React from 'react'
 import "../css/mainWeather.css"
 import { FaSearch } from "react-icons/fa";
 import { TbTemperatureCelsius } from "react-icons/tb";
-import SearchBar from "./SearchBar"
+import SearchBar from "./searchBar"
 
 function MainWeather( {location, setLocation, weather, getDayOfWeek}) {
   return (
