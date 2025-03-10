@@ -44,6 +44,9 @@
     #search-input {
         font-size: 1.2rem;
     }
+    #search-input::placeholder{
+        font-size: 0.75rem;
+    }
     .search-icon {
         font-size: 1.2rem;
     }
@@ -56,7 +59,11 @@
     #search-input {
         font-size: 0.5rem;
     }
-    .search-icon {
-        font-size: 1rem;
+    #search-input::placeholder{
+        font-size: 0.5rem;
     }
+    .search-icon {
+        font-size: 0.75rem;
+    }
+
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-import MainWeather from "./mainWeather" 
+import MainWeather from "./MainWeather" 
 import "../css/Weather.css"
 import Days from "./Days"
 
@@ -34,7 +34,7 @@ function Weather() {
 
     return (
             <div className="container">
-            <MainWeather location={location} setLocation={setLocation} weather={weather}getDayOfWeek={getDayOfWeek} />
+            <MainWeather location={location} setLocation={setLocation} weather={weather} getDayOfWeek={getDayOfWeek} />
             
             {
                 weather && (

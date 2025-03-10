@@ -1,5 +1,5 @@
 import React from 'react'
-import "../css/Days.css"
+import "../css/days.css"
 import { TbTemperatureCelsius } from "react-icons/tb";
 import { getDayOfWeek } from "./Weather"
 
