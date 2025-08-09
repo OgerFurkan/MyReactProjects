@@ -60,3 +60,28 @@
   -webkit-appearance: none;
   margin: 0;
 }
+
+
+@media (max-width:2100px) {
+  .page-number-input{
+    width: 10%;
+  }
+}
+
+@media (max-width:1440px) {
+ .page-number-input{
+    width: 20%;
+  }
+}
+
+@media (max-width:800px) {
+  .page-number-input{
+    width: 30%;
+  }
+}
+
+@media (max-width:550px) {
+  .page-number-input{
+    width: 100%;
+  }
+}

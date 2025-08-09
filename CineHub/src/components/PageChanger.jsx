@@ -34,12 +34,12 @@ function PageChanger({page,setPage}) {
       const value = Number(customPageNumber)
       if(!isNaN(value) && value>0 ){
         setPage(value)
-        SetIsCustomPageNumber(!isCustomPageNumber)
+        setIsCustomPageNumber(!isCustomPageNumber)
       }
       else{
         setPage(1)
-        SetCustomPageNumber(page)
-        SetIsCustomPageNumber(!isCustomPageNumber)
+        setIsCustomPageNumber(page)
+        setIsCustomPageNumber(!isCustomPageNumber)
       }
     }
     const handleKeyDown = (e) => {
