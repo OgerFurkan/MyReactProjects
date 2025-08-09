@@ -1,0 +1,62 @@
+.page-changer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+}
+.page-changer-icon{
+  font-size: 3em;
+  cursor: pointer;
+  transition: all 0.1s; 
+  user-select: none;
+  border-radius: 50%;
+  background-color: #071426;
+  color: #f44531;
+  border: 1px solid white;
+}
+.page-changer-icon:hover{
+  transform: scale(1.1);
+  background-color: #071426;
+  color: white;
+ 
+}
+.page-number{
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+}
+.page-changer .selected{
+  font-size: 4rem;
+  transition: all 0.1s;
+}
+.page-changer:last-of-type .selected:hover{
+  transform: scale(1.4);
+  color: #071426;
+}
+.page-changer .selected:hover {
+  transform: scale(1.4);
+  color: #f44531;
+}
+.unselected{
+  color: rgba(255, 255, 255, 0.473);
+}
+
+.page-number-input{
+  color: white;
+  font-size: 2.5em;
+  font-weight: bold;
+  padding: 16px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 40px;
+  width: 5%;
+  text-align: center;
+  outline: none;
+  -moz-appearance: textfield;
+}
+.page-number-input::-webkit-outer-spin-button,
+.page-number-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

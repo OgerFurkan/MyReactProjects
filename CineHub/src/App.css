@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100..900&display=swap');
+
+*{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+#root{
+    min-height: 100vh;
+    background: #F44531;
+    background: linear-gradient(0deg, rgba(244, 69, 49, 1) 0%, rgba(116, 43, 43, 1) 90%, rgba(7, 20, 38, 1) 95%);
+}
+
+ /*     Toast CSS   */
+.custom-toast {
+    background-color: #071426;
+    color:  #f44531;
+    border: 1px solid white;
+    top: 124px;
+    width: 350px;
+    max-width: 90vw;
+    box-sizing: border-box;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.custom-toast-wrapper{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.custom-toast-icon {
+    height: 40px;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.custom-toast-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+}
+
+.custom-toast-title {
+    display: flex;
+    margin: 0;
+    font-size: 1.1em;
+    word-break: break-word;
+}
+
+.custom-toast-status.added {
+    color: rgb(0, 255, 0);
+    margin: 0 4px;
+}
+
+.custom-toast-status.removed {
+    color: rgb(255, 0, 0);
+    margin: 0 4px;
+}
+
+.custom-toast-movie-title {
+    color: white;
+    margin: 0;
+    word-break: break-word;
+    font-size: 1em;
+}
+
+@media (max-width: 500px) {
+    .custom-toast {
+        width: 98vw;
+        min-width: 0;
+        font-size: 0.95rem;
+        padding: 0.7rem;
+    }
+    .custom-toast-icon {
+        height: 28px;
+        margin-right: 0.5rem;
+    }
+    .custom-toast-title,
+    .custom-toast-movie-title {
+        font-size: 0.95em;
+    }
+}
+
+

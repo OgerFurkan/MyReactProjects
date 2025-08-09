@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* Favorites Page CSS */
+.favorite-movies-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.favorite-movies-container *{
+    z-index: 1;
+}
+
+
+
+
+/* Favorites Page Title CSS */
+.favorite-title{
+    position: sticky;
+    top: 124px;
+    display: flex;
+    align-self: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    z-index: 2;
+    color: white;
+    background-color: #071426ce;
+    border-bottom-right-radius: 40px;
+}
+.favorite-heart{
+    color: #f44531;
+    font-size: 2.5rem;
+}
+
+
+
+
+/* Favorites Picker Div CSS */
+.favorite-movie-picker-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.favorite-movie-picker-backdrop{
+    position: absolute;
+    top:0;
+    width: 100%;;
+    z-index: 0;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+.favorite-movie-picker-button, .favorite-link-home{
+    cursor: pointer;
+    margin: 32px 0 64px;
+    padding: 16px;
+    border: 1px solid white;
+    border-radius: 40px;
+    background-color: #071426;
+    color: #f44531;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.1s;
+    text-decoration: none;
+}
+.favorite-movie-picker-button:hover, .favorite-link-home:hover{
+    transform: scale(1.1);
+}
+.favorite-movie-picker-button:active, .favorite-link-home:active{
+    transform: scale(1);
+}
+
+
+
+
+/* Favorites Search Bar CSS */
+.favorite-search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    padding: 8px;
+    margin-top: 24px;
+    border: 2px solid white;
+    border-radius: 40px;
+    backdrop-filter: blur(15px);
+}
+.search-input-favorite{
+    background-color: transparent;
+    width: 95%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    color:white;
+    font-size: 2rem;
+}
+.search-input-favorite::placeholder{
+    color:rgba(255, 255, 255, 0.452);
+}
+.favorite-search-icon{
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    margin-right: 16px;
+}
+
+
+
+
+/* Favorites Movie Container CSS */
+.favorite-movie-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    margin: 1% 0;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 32px 0;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+
+
+
+/* Favorites Info Div-Img CSS */
+.no-favorite-movie-info{
+    color: white;
+    font-size: 3em;
+}
+.favorite-movie-not-found-img{
+    margin-bottom: 32px;
+    width: 5%;
+}
+
+
+
+
+/* Responsive CSS */
+@media (max-width: 1440px) {
+    .favorite-title{
+        top: 94px;
+    }
+}
+
+
+
+
+@media (max-width: 1200px) {
+    .favorite-search-bar {
+        width: 40%;
+    }
+    .favorite-movie-wrapper {
+        flex-direction: column;
+        align-items: center;
+        min-height: 60vh;
+    }
+}
+
+
+
+
+@media (max-width: 800px) {
+    .favorite-search-bar {
+        width: 60%;
+    }
+    .favorite-title {
+        position: static;
+        top: 210px;
+        font-size: 1.2rem;
+        padding: 12px;
+    }
+    .favorite-heart {
+        font-size: 2rem;
+    }
+    .favorite-movie-picker-button, .favorite-link-home {
+        font-size: 1rem;
+        padding: 12px;
+    }
+    .no-favorite-movie-info {
+        font-size: 2em;
+    }
+    .favorite-movie-not-found-img {
+        width: 10%;
+    }
+}
+
+
+
+
+@media (max-width: 610px) {
+    .favorite-movies-container {
+        min-height: 80vh;
+        padding: 8px;
+    }
+    .favorite-title {
+        margin: -10px -10px 10px;
+        font-size: 1rem;
+        padding: 8px;
+        border-bottom-right-radius: 20px;
+    }
+    .favorite-heart {
+        font-size: 1.5rem;
+    }
+    .favorite-movie-picker-button, .favorite-link-home {
+        font-size: 0.9rem;
+        padding: 8px;
+        margin: 16px 0 32px;
+    }
+    .favorite-search-bar {
+        width: 90%;
+        padding: 4px;
+        margin-top: 16px;
+    }
+    .search-input-favorite {
+        font-size: 1.2rem;
+        padding: 4px;
+    }
+    .favorite-search-icon {
+        font-size: 1.2rem;
+        margin-right: 8px;
+    }
+    .favorite-movie-wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 16px 0;
+        min-height: 40vh;
+    }
+    .no-favorite-movie-info {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .favorite-movie-not-found-img {
+        width: 20%;
+        margin-bottom: 16px;
+    }
+}
