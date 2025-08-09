@@ -16,7 +16,6 @@ export const fetchAllGenres= createAsyncThunk("fetchAllGenres",async()=>{
 
 export const fetchMoviesByGenre = createAsyncThunk("fetchMoviesByGenre",async ({ genres, page }) => {
         const genresQueryString = genres.join(',');
-        console.log("page", page);
         const response = await axios.get(`${import.meta.env.VITE_BASE_URL}/discover/movie?api_key=${import.meta.env.VITE_API_KEY}&with_genres=${genresQueryString}&page=${Number(page)}`);
         return response.data.results;
     }
