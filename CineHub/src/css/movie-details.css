@@ -236,16 +236,18 @@
         height: 50vh;
         width: 90%;
     }
+   
 }
-@media (max-width:450px){
-    .movie-details-poster-container{
-       width: 100%;
+@media (max-width:500px){
+     .movie-details-poster-container{
+       width: 80%;
+       height: 500px;
     }
     .movie-details-poster{
         width: 100%;
     }
     .movie-details-info{
-        width: 100%
+        width: 90%;
     }
     .movie-details-wrapper .loader-wrapper{
         align-self: center;
